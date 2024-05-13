@@ -1,0 +1,77 @@
+/* Estilos gerais */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os campos */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Estilos para os botões */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a mensagem de "Aguarde! Carregando..." */
+#carregando {
+    display: block;
+    margin-top: 5px;
+    color: #007bff;
+}
+
+/* Estilos para a mensagem de sucesso ou erro */
+#mensagem {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+#mensagem.sucesso {
+    background-color: #28a745;
+    color: white;
+}
+
+#mensagem.erro {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Estilos para o captcha */
+.g-recaptcha {
+    margin-bottom: 10px;
+}
